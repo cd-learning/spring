@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+<!--    <bean id = "animal" class="com.parent.abstracts.app.model.Cat" >
+  	<property name="color" value="red"></property>
+    <property name="height" value="5.7"></property>
+    <property name="name" value="camel"></property>
+ 
+   </bean>
+
+<bean id="catAnimal" parent="animal">
+    <property name="height" value="5.8"></property>
+    <property name="name" value="camel"></property>
+ 
+</bean>   -->
+
+ <!-- Alternative solution to use abstract using -->
+
+
+   <bean id = "animal" abstract="true">
+  	<property name="color" value="red"></property>
+    <property name="height" value="5.7"></property>
+    <property name="name" value="camel"></property>
+ 
+   </bean>
+
+<bean id="catAnimal" class="com.parent.abstracts.app.model.Cat" parent="animal">
+    <property name="color" value="red"></property>
+  
+    <property name="name" value="camel"></property>
+ 
+</bean>
+
+
+
+
+
+
+</beans>
