@@ -15,3 +15,7 @@ https://github.com/in28minutes/spring-boot-master-class/tree/master/05.Spring-Bo
 
 ###Github JPA Advanced
  https://github.com/in28minutes/jpa-with-hibernate/tree/master/02-jpa-advanced
+
+
+### Junit Test 
+http://www.java2novice.com/junit-examples/test-annotation/
